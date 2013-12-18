@@ -1,12 +1,10 @@
-
 import java.io.IOException;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
-
-
 
 /*
  * To change this template, choose Tools | Templates
@@ -18,35 +16,28 @@ import javax.swing.ImageIcon;
  * @author usuario
  */
 public class Practica3 extends javax.swing.JFrame {
-    Random numAleatorio = new Random();
-    int aleatorio1,aleatorio2,aleatorio3,aleatorio4;
-    int aleatorio5,aleatorio6,aleatorio7,aleatorio8;
-    int aleatorio9,aleatorio10,aleatorio11,aleatorio12;
-    int aleatorio13,aleatorio14,aleatorio15,aleatorio16;
-    ImageIcon imagen1 = null;
-    ImageIcon imagen2 = null;
-    ImageIcon imagen3 = null;
-    ImageIcon imagen4 = null;
-    ImageIcon imagen5 = null;
-    ImageIcon imagen6 = null;
-    ImageIcon imagen7 = null;
-    ImageIcon imagen8 = null;
-    ImageIcon imagen9 = null;
-    ImageIcon imagen10 = null;
-    ImageIcon imagen11 = null;
-    ImageIcon imagen12 = null;
-    ImageIcon imagen13 = null;
-    ImageIcon imagen14 = null;
-    ImageIcon imagen15 = null;
-    ImageIcon imagen16 = null;
-    
     /**
      * Creates new form Practica3
      */
     public Practica3() {
         initComponents();
+        jToggleButton1.setEnabled(false);
+        jToggleButton2.setEnabled(false);
+        jToggleButton3.setEnabled(false);
+        jToggleButton4.setEnabled(false);
+        jToggleButton5.setEnabled(false);
+        jToggleButton6.setEnabled(false);
+        jToggleButton7.setEnabled(false);
+        jToggleButton8.setEnabled(false);
+        jToggleButton9.setEnabled(false);
+        jToggleButton10.setEnabled(false);
+        jToggleButton11.setEnabled(false);
+        jToggleButton12.setEnabled(false);
+        jToggleButton13.setEnabled(false);
+        jToggleButton14.setEnabled(false);
+        jToggleButton15.setEnabled(false);
+        jToggleButton16.setEnabled(false);
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -61,6 +52,9 @@ public class Practica3 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
@@ -81,8 +75,12 @@ public class Practica3 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -93,6 +91,12 @@ public class Practica3 extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -107,6 +111,12 @@ public class Practica3 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -114,12 +124,18 @@ public class Practica3 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -229,29 +245,45 @@ public class Practica3 extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Empezar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Recordar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
+        jButton3.setText("Comprobar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Aciertos");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -261,7 +293,13 @@ public class Practica3 extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -270,14 +308,13 @@ public class Practica3 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -295,251 +332,48 @@ public class Practica3 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jToggleButton1.setEnabled(false);
-        jToggleButton2.setEnabled(false);
-        jToggleButton3.setEnabled(false);
-        jToggleButton4.setEnabled(false);
-        jToggleButton5.setEnabled(false);
-        jToggleButton6.setEnabled(false);
-        jToggleButton7.setEnabled(false);
-        jToggleButton8.setEnabled(false);
-        jToggleButton9.setEnabled(false);
-        jToggleButton10.setEnabled(false);
-        jToggleButton11.setEnabled(false);
-        jToggleButton12.setEnabled(false);
-        jToggleButton13.setEnabled(false);
-        jToggleButton14.setEnabled(false);
-        jToggleButton15.setEnabled(false);
-        jToggleButton16.setEnabled(false);
+        jLabel9.setText("");
         
-        aleatorio1 = numAleatorio.nextInt(16)+1;
-        aleatorio2 = numAleatorio.nextInt(16)+1;
-        aleatorio3 = numAleatorio.nextInt(16)+1;
-        aleatorio4 = numAleatorio.nextInt(16)+1;
-        
-        
-        
-        try {
-            imagen1 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        Random generadorNum = new Random();
+        String numeroGenerado = "";
+        String enlace = "";
+        int contador;
+
+        for (contador = 0; contador <= 4; contador++) {
+            numeroGenerado += (char) ('A' + generadorNum.nextInt(15));
+
+            for (contador = 0; contador < numeroGenerado.length(); contador++) {
+                enlace = "/imagenes/" + numeroGenerado.charAt(contador) + ".png";
+                if (contador == 0) {
+                    try {
+                        jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 1) {
+                    try {
+                        jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 2) {
+                    try {
+                        jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 3) {
+                    try {
+                        jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }
         }
-        try {
-            imagen2 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/B.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen3 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/C.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen4 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/D.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen5 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/E.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen6 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/F.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen7 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/G.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen8 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/H.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen9 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/I.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen10 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/J.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen11 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/K.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen12 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/L.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen13 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/M.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen14 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/N.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen15 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/O.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            imagen16 = new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/P.png")));
-        } catch (IOException ex) {
-            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        //Aleatorio del primer jLabel
-        if(aleatorio1 == 1){
-            jLabel1.setIcon(imagen1);
-        }if(aleatorio1 == 2){
-            jLabel1.setIcon(imagen2);
-        }if(aleatorio1 == 3){
-            jLabel1.setIcon(imagen3);
-        }if(aleatorio1 == 4){
-            jLabel1.setIcon(imagen4);
-        }if(aleatorio1 == 5){
-            jLabel1.setIcon(imagen5);
-        }if(aleatorio1 == 6){
-            jLabel1.setIcon(imagen6);
-        }if(aleatorio1 == 7){
-            jLabel1.setIcon(imagen7);
-        }if(aleatorio1 == 8){
-            jLabel1.setIcon(imagen8);
-        }if(aleatorio1 == 9){
-            jLabel1.setIcon(imagen9);
-        }if(aleatorio1 == 10){
-            jLabel1.setIcon(imagen10);
-        }if(aleatorio1 == 11){
-            jLabel1.setIcon(imagen11);
-        }if(aleatorio1 == 12){
-            jLabel1.setIcon(imagen12);
-        }if(aleatorio1 == 13){
-            jLabel1.setIcon(imagen13);
-        }if(aleatorio1 == 14){
-            jLabel1.setIcon(imagen14);
-        }if(aleatorio1 == 15){
-            jLabel1.setIcon(imagen15);
-        }if(aleatorio1 == 16){
-            jLabel1.setIcon(imagen16);
-        }
-        
-        //Aleatorio del segundo jLabel
-        if(aleatorio2 == 1){
-            jLabel2.setIcon(imagen1);
-        }if(aleatorio2 == 2){
-            jLabel2.setIcon(imagen2);
-        }if(aleatorio2 == 3){
-            jLabel2.setIcon(imagen3);
-        }if(aleatorio2 == 4){
-            jLabel2.setIcon(imagen4);
-        }if(aleatorio2 == 5){
-            jLabel2.setIcon(imagen5);
-        }if(aleatorio2 == 6){
-            jLabel2.setIcon(imagen6);
-        }if(aleatorio2 == 7){
-            jLabel2.setIcon(imagen7);
-        }if(aleatorio2 == 8){
-            jLabel2.setIcon(imagen8);
-        }if(aleatorio2 == 9){
-            jLabel2.setIcon(imagen9);
-        }if(aleatorio2 == 10){
-            jLabel2.setIcon(imagen10);
-        }if(aleatorio2 == 11){
-            jLabel2.setIcon(imagen11);
-        }if(aleatorio2 == 12){
-            jLabel2.setIcon(imagen12);
-        }if(aleatorio2 == 13){
-            jLabel2.setIcon(imagen13);
-        }if(aleatorio2 == 14){
-            jLabel2.setIcon(imagen14);
-        }if(aleatorio2 == 15){
-            jLabel2.setIcon(imagen15);
-        }if(aleatorio2 == 16){
-            jLabel2.setIcon(imagen16);
-        }
-        
-        //Aleatorio del tercer jLabel
-        if(aleatorio3 == 1){
-            jLabel3.setIcon(imagen1);
-        }if(aleatorio3 == 2){
-            jLabel3.setIcon(imagen2);
-        }if(aleatorio3 == 3){
-            jLabel3.setIcon(imagen3);
-        }if(aleatorio3 == 4){
-            jLabel3.setIcon(imagen4);
-        }if(aleatorio3 == 5){
-            jLabel3.setIcon(imagen5);
-        }if(aleatorio3 == 6){
-            jLabel3.setIcon(imagen6);
-        }if(aleatorio3 == 7){
-            jLabel3.setIcon(imagen7);
-        }if(aleatorio3 == 8){
-            jLabel3.setIcon(imagen8);
-        }if(aleatorio3 == 9){
-            jLabel3.setIcon(imagen9);
-        }if(aleatorio3 == 10){
-            jLabel3.setIcon(imagen10);
-        }if(aleatorio3 == 11){
-            jLabel3.setIcon(imagen11);
-        }if(aleatorio3 == 12){
-            jLabel3.setIcon(imagen12);
-        }if(aleatorio3 == 13){
-            jLabel3.setIcon(imagen13);
-        }if(aleatorio3 == 14){
-            jLabel3.setIcon(imagen14);
-        }if(aleatorio3 == 15){
-            jLabel3.setIcon(imagen15);
-        }if(aleatorio3 == 16){
-            jLabel3.setIcon(imagen16);
-        }
-        
-        //Aleatorio del cuarto jLabel
-        if(aleatorio4 == 1){
-            jLabel4.setIcon(imagen1);
-        }if(aleatorio4 == 2){
-            jLabel4.setIcon(imagen2);
-        }if(aleatorio4 == 3){
-            jLabel4.setIcon(imagen3);
-        }if(aleatorio4 == 4){
-            jLabel4.setIcon(imagen4);
-        }if(aleatorio4 == 5){
-            jLabel4.setIcon(imagen5);
-        }if(aleatorio4 == 6){
-            jLabel4.setIcon(imagen6);
-        }if(aleatorio4 == 7){
-            jLabel4.setIcon(imagen7);
-        }if(aleatorio4 == 8){
-            jLabel4.setIcon(imagen8);
-        }if(aleatorio4 == 9){
-            jLabel4.setIcon(imagen9);
-        }if(aleatorio4 == 10){
-            jLabel4.setIcon(imagen10);
-        }if(aleatorio4 == 11){
-            jLabel4.setIcon(imagen11);
-        }if(aleatorio4 == 12){
-            jLabel4.setIcon(imagen12);
-        }if(aleatorio4 == 13){
-            jLabel4.setIcon(imagen13);
-        }if(aleatorio4 == 14){
-            jLabel4.setIcon(imagen14);
-        }if(aleatorio4 == 15){
-            jLabel4.setIcon(imagen15);
-        }if(aleatorio4 == 16){
-            jLabel4.setIcon(imagen16);
-        }
-        
-        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -560,584 +394,270 @@ public class Practica3 extends javax.swing.JFrame {
         jToggleButton15.setEnabled(true);
         jToggleButton16.setEnabled(true);
         
-        aleatorio1 = numAleatorio.nextInt(16)+1;
-        aleatorio2 = numAleatorio.nextInt(16)+1;
-        aleatorio3 = numAleatorio.nextInt(16)+1;
-        aleatorio4 = numAleatorio.nextInt(16)+1;
-        aleatorio5 = numAleatorio.nextInt(16)+1;
-        aleatorio6 = numAleatorio.nextInt(16)+1;
-        aleatorio7 = numAleatorio.nextInt(16)+1;
-        aleatorio8 = numAleatorio.nextInt(16)+1;
-        aleatorio9 = numAleatorio.nextInt(16)+1;
-        aleatorio10 = numAleatorio.nextInt(16)+1;
-        aleatorio11 = numAleatorio.nextInt(16)+1;
-        aleatorio12 = numAleatorio.nextInt(16)+1;
-        aleatorio13 = numAleatorio.nextInt(16)+1;
-        aleatorio14 = numAleatorio.nextInt(16)+1;
-        aleatorio15 = numAleatorio.nextInt(16)+1;
-        aleatorio16 = numAleatorio.nextInt(16)+1;
-        
-        //Aleatorio del primer jToggleButton
-        if(aleatorio1 == 1){
-            jToggleButton1.setIcon(imagen1);
-        }if(aleatorio1 == 2){
-            jToggleButton1.setIcon(imagen2);
-        }if(aleatorio1 == 3){
-            jToggleButton1.setIcon(imagen3);
-        }if(aleatorio1 == 4){
-            jToggleButton1.setIcon(imagen4);
-        }if(aleatorio1 == 5){
-            jToggleButton1.setIcon(imagen5);
-        }if(aleatorio1 == 6){
-            jToggleButton1.setIcon(imagen6);
-        }if(aleatorio1 == 7){
-            jToggleButton1.setIcon(imagen7);
-        }if(aleatorio1 == 8){
-            jToggleButton1.setIcon(imagen8);
-        }if(aleatorio1 == 9){
-            jToggleButton1.setIcon(imagen9);
-        }if(aleatorio1 == 10){
-            jToggleButton1.setIcon(imagen10);
-        }if(aleatorio1 == 11){
-            jToggleButton1.setIcon(imagen11);
-        }if(aleatorio1 == 12){
-            jToggleButton1.setIcon(imagen12);
-        }if(aleatorio1 == 13){
-            jToggleButton1.setIcon(imagen13);
-        }if(aleatorio1 == 14){
-            jToggleButton1.setIcon(imagen14);
-        }if(aleatorio1 == 15){
-            jToggleButton1.setIcon(imagen15);
-        }if(aleatorio1 == 16){
-            jToggleButton1.setIcon(imagen16);
+        try {
+            jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        //Aleatorio del segundo jToggleButton
-        if(aleatorio2 == 1){
-            jToggleButton2.setIcon(imagen1);
-        }if(aleatorio2 == 2){
-            jToggleButton2.setIcon(imagen2);
-        }if(aleatorio2 == 3){
-            jToggleButton2.setIcon(imagen3);
-        }if(aleatorio2 == 4){
-            jToggleButton2.setIcon(imagen4);
-        }if(aleatorio2 == 5){
-            jToggleButton2.setIcon(imagen5);
-        }if(aleatorio2 == 6){
-            jToggleButton2.setIcon(imagen6);
-        }if(aleatorio2 == 7){
-            jToggleButton2.setIcon(imagen7);
-        }if(aleatorio2 == 8){
-            jToggleButton2.setIcon(imagen8);
-        }if(aleatorio2 == 9){
-            jToggleButton2.setIcon(imagen9);
-        }if(aleatorio2 == 10){
-            jToggleButton2.setIcon(imagen10);
-        }if(aleatorio2 == 11){
-            jToggleButton2.setIcon(imagen11);
-        }if(aleatorio2 == 12){
-            jToggleButton2.setIcon(imagen12);
-        }if(aleatorio2 == 13){
-            jToggleButton2.setIcon(imagen13);
-        }if(aleatorio2 == 14){
-            jToggleButton2.setIcon(imagen14);
-        }if(aleatorio2 == 15){
-            jToggleButton2.setIcon(imagen15);
-        }if(aleatorio2 == 16){
-            jToggleButton2.setIcon(imagen16);
-        }
-        
-        //Aleatorio del tercer jToggleButton
-        if(aleatorio3 == 1){
-            jToggleButton3.setIcon(imagen1);
-        }if(aleatorio3 == 2){
-            jToggleButton3.setIcon(imagen2);
-        }if(aleatorio3 == 3){
-            jToggleButton3.setIcon(imagen3);
-        }if(aleatorio3 == 4){
-            jToggleButton3.setIcon(imagen4);
-        }if(aleatorio3 == 5){
-            jToggleButton3.setIcon(imagen5);
-        }if(aleatorio3 == 6){
-            jToggleButton3.setIcon(imagen6);
-        }if(aleatorio3 == 7){
-            jToggleButton3.setIcon(imagen7);
-        }if(aleatorio3 == 8){
-            jToggleButton3.setIcon(imagen8);
-        }if(aleatorio3 == 9){
-            jToggleButton3.setIcon(imagen9);
-        }if(aleatorio3 == 10){
-            jToggleButton3.setIcon(imagen10);
-        }if(aleatorio3 == 11){
-            jToggleButton3.setIcon(imagen11);
-        }if(aleatorio3 == 12){
-            jToggleButton3.setIcon(imagen12);
-        }if(aleatorio3 == 13){
-            jToggleButton3.setIcon(imagen13);
-        }if(aleatorio3 == 14){
-            jToggleButton3.setIcon(imagen14);
-        }if(aleatorio3 == 15){
-            jToggleButton3.setIcon(imagen15);
-        }if(aleatorio3 == 16){
-            jToggleButton3.setIcon(imagen16);
-        }
-        
-        //Aleatorio del cuarto jToggleButton
-        if(aleatorio4 == 1){
-            jToggleButton4.setIcon(imagen1);
-        }if(aleatorio4 == 2){
-            jToggleButton4.setIcon(imagen2);
-        }if(aleatorio4 == 3){
-            jToggleButton4.setIcon(imagen3);
-        }if(aleatorio4 == 4){
-            jToggleButton4.setIcon(imagen4);
-        }if(aleatorio4 == 5){
-            jToggleButton4.setIcon(imagen5);
-        }if(aleatorio4 == 6){
-            jToggleButton4.setIcon(imagen6);
-        }if(aleatorio4 == 7){
-            jToggleButton4.setIcon(imagen7);
-        }if(aleatorio4 == 8){
-            jToggleButton4.setIcon(imagen8);
-        }if(aleatorio4 == 9){
-            jToggleButton4.setIcon(imagen9);
-        }if(aleatorio4 == 10){
-            jToggleButton4.setIcon(imagen10);
-        }if(aleatorio4 == 11){
-            jToggleButton4.setIcon(imagen11);
-        }if(aleatorio4 == 12){
-            jToggleButton4.setIcon(imagen12);
-        }if(aleatorio4 == 13){
-            jToggleButton4.setIcon(imagen13);
-        }if(aleatorio4 == 14){
-            jToggleButton4.setIcon(imagen14);
-        }if(aleatorio4 == 15){
-            jToggleButton4.setIcon(imagen15);
-        }if(aleatorio4 == 16){
-            jToggleButton4.setIcon(imagen16);
-        }
-        
-        //Aleatorio del quinto jToggleButton
-        if(aleatorio5 == 1){
-            jToggleButton5.setIcon(imagen1);
-        }if(aleatorio5 == 2){
-            jToggleButton5.setIcon(imagen2);
-        }if(aleatorio5 == 3){
-            jToggleButton5.setIcon(imagen3);
-        }if(aleatorio5 == 4){
-            jToggleButton5.setIcon(imagen4);
-        }if(aleatorio5 == 5){
-            jToggleButton5.setIcon(imagen5);
-        }if(aleatorio5 == 6){
-            jToggleButton5.setIcon(imagen6);
-        }if(aleatorio5 == 7){
-            jToggleButton5.setIcon(imagen7);
-        }if(aleatorio5 == 8){
-            jToggleButton5.setIcon(imagen8);
-        }if(aleatorio5 == 9){
-            jToggleButton5.setIcon(imagen9);
-        }if(aleatorio5 == 10){
-            jToggleButton5.setIcon(imagen10);
-        }if(aleatorio5 == 11){
-            jToggleButton5.setIcon(imagen11);
-        }if(aleatorio5 == 12){
-            jToggleButton5.setIcon(imagen12);
-        }if(aleatorio5 == 13){
-            jToggleButton5.setIcon(imagen13);
-        }if(aleatorio5 == 14){
-            jToggleButton5.setIcon(imagen14);
-        }if(aleatorio5 == 15){
-            jToggleButton5.setIcon(imagen15);
-        }if(aleatorio5 == 16){
-            jToggleButton5.setIcon(imagen16);
-        }
-        
-        //Aleatorio del sexto jToggleButton
-        if(aleatorio6 == 1){
-            jToggleButton6.setIcon(imagen1);
-        }if(aleatorio6 == 2){
-            jToggleButton6.setIcon(imagen2);
-        }if(aleatorio6 == 3){
-            jToggleButton6.setIcon(imagen3);
-        }if(aleatorio6 == 4){
-            jToggleButton6.setIcon(imagen4);
-        }if(aleatorio6 == 5){
-            jToggleButton6.setIcon(imagen5);
-        }if(aleatorio6 == 6){
-            jToggleButton6.setIcon(imagen6);
-        }if(aleatorio6 == 7){
-            jToggleButton6.setIcon(imagen7);
-        }if(aleatorio6 == 8){
-            jToggleButton6.setIcon(imagen8);
-        }if(aleatorio6 == 9){
-            jToggleButton6.setIcon(imagen9);
-        }if(aleatorio6 == 10){
-            jToggleButton6.setIcon(imagen10);
-        }if(aleatorio6 == 11){
-            jToggleButton6.setIcon(imagen11);
-        }if(aleatorio6 == 12){
-            jToggleButton6.setIcon(imagen12);
-        }if(aleatorio6 == 13){
-            jToggleButton6.setIcon(imagen13);
-        }if(aleatorio6 == 14){
-            jToggleButton6.setIcon(imagen14);
-        }if(aleatorio6 == 15){
-            jToggleButton6.setIcon(imagen15);
-        }if(aleatorio6 == 16){
-            jToggleButton1.setIcon(imagen16);
-        }
-        
-        //Aleatorio del septimo jToggleButton
-        if(aleatorio7 == 1){
-            jToggleButton7.setIcon(imagen1);
-        }if(aleatorio7 == 2){
-            jToggleButton7.setIcon(imagen2);
-        }if(aleatorio7 == 3){
-            jToggleButton7.setIcon(imagen3);
-        }if(aleatorio7 == 4){
-            jToggleButton7.setIcon(imagen4);
-        }if(aleatorio7 == 5){
-            jToggleButton7.setIcon(imagen5);
-        }if(aleatorio7 == 6){
-            jToggleButton7.setIcon(imagen6);
-        }if(aleatorio7 == 7){
-            jToggleButton7.setIcon(imagen7);
-        }if(aleatorio7 == 8){
-            jToggleButton7.setIcon(imagen8);
-        }if(aleatorio7 == 9){
-            jToggleButton7.setIcon(imagen9);
-        }if(aleatorio7 == 10){
-            jToggleButton7.setIcon(imagen10);
-        }if(aleatorio7 == 11){
-            jToggleButton7.setIcon(imagen11);
-        }if(aleatorio7 == 12){
-            jToggleButton7.setIcon(imagen12);
-        }if(aleatorio7 == 13){
-            jToggleButton7.setIcon(imagen13);
-        }if(aleatorio7 == 14){
-            jToggleButton7.setIcon(imagen14);
-        }if(aleatorio7 == 15){
-            jToggleButton7.setIcon(imagen15);
-        }if(aleatorio7 == 16){
-            jToggleButton7.setIcon(imagen16);
-        }
-        
-        //Aleatorio del octavo jToggleButton
-        if(aleatorio8 == 1){
-            jToggleButton8.setIcon(imagen1);
-        }if(aleatorio8 == 2){
-            jToggleButton8.setIcon(imagen2);
-        }if(aleatorio8 == 3){
-            jToggleButton8.setIcon(imagen3);
-        }if(aleatorio8 == 4){
-            jToggleButton8.setIcon(imagen4);
-        }if(aleatorio8 == 5){
-            jToggleButton8.setIcon(imagen5);
-        }if(aleatorio8 == 6){
-            jToggleButton8.setIcon(imagen6);
-        }if(aleatorio8 == 7){
-            jToggleButton8.setIcon(imagen7);
-        }if(aleatorio8 == 8){
-            jToggleButton8.setIcon(imagen8);
-        }if(aleatorio8 == 9){
-            jToggleButton8.setIcon(imagen9);
-        }if(aleatorio8 == 10){
-            jToggleButton8.setIcon(imagen10);
-        }if(aleatorio8 == 11){
-            jToggleButton8.setIcon(imagen11);
-        }if(aleatorio8 == 12){
-            jToggleButton8.setIcon(imagen12);
-        }if(aleatorio8 == 13){
-            jToggleButton8.setIcon(imagen13);
-        }if(aleatorio8 == 14){
-            jToggleButton8.setIcon(imagen14);
-        }if(aleatorio8 == 15){
-            jToggleButton8.setIcon(imagen15);
-        }if(aleatorio8 == 16){
-            jToggleButton8.setIcon(imagen16);
-        }
-        
-        //Aleatorio del noveno jToggleButton
-        if(aleatorio9 == 1){
-            jToggleButton9.setIcon(imagen1);
-        }if(aleatorio9 == 2){
-            jToggleButton9.setIcon(imagen2);
-        }if(aleatorio9 == 3){
-            jToggleButton9.setIcon(imagen3);
-        }if(aleatorio9 == 4){
-            jToggleButton9.setIcon(imagen4);
-        }if(aleatorio9 == 5){
-            jToggleButton9.setIcon(imagen5);
-        }if(aleatorio9 == 6){
-            jToggleButton9.setIcon(imagen6);
-        }if(aleatorio9 == 7){
-            jToggleButton9.setIcon(imagen7);
-        }if(aleatorio9 == 8){
-            jToggleButton9.setIcon(imagen8);
-        }if(aleatorio9 == 9){
-            jToggleButton9.setIcon(imagen9);
-        }if(aleatorio9 == 10){
-            jToggleButton9.setIcon(imagen10);
-        }if(aleatorio9 == 11){
-            jToggleButton9.setIcon(imagen11);
-        }if(aleatorio9 == 12){
-            jToggleButton9.setIcon(imagen12);
-        }if(aleatorio9 == 13){
-            jToggleButton9.setIcon(imagen13);
-        }if(aleatorio9 == 14){
-            jToggleButton9.setIcon(imagen14);
-        }if(aleatorio9 == 15){
-            jToggleButton9.setIcon(imagen15);
-        }if(aleatorio9 == 16){
-            jToggleButton9.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimo jToggleButton
-        if(aleatorio10 == 1){
-            jToggleButton10.setIcon(imagen1);
-        }if(aleatorio10 == 2){
-            jToggleButton10.setIcon(imagen2);
-        }if(aleatorio10 == 3){
-            jToggleButton10.setIcon(imagen3);
-        }if(aleatorio10 == 4){
-            jToggleButton10.setIcon(imagen4);
-        }if(aleatorio10 == 5){
-            jToggleButton10.setIcon(imagen5);
-        }if(aleatorio10 == 6){
-            jToggleButton10.setIcon(imagen6);
-        }if(aleatorio10 == 7){
-            jToggleButton10.setIcon(imagen7);
-        }if(aleatorio10 == 8){
-            jToggleButton10.setIcon(imagen8);
-        }if(aleatorio10 == 9){
-            jToggleButton10.setIcon(imagen9);
-        }if(aleatorio10 == 10){
-            jToggleButton10.setIcon(imagen10);
-        }if(aleatorio10 == 11){
-            jToggleButton10.setIcon(imagen11);
-        }if(aleatorio10 == 12){
-            jToggleButton10.setIcon(imagen12);
-        }if(aleatorio10 == 13){
-            jToggleButton10.setIcon(imagen13);
-        }if(aleatorio10 == 14){
-            jToggleButton10.setIcon(imagen14);
-        }if(aleatorio10 == 15){
-            jToggleButton10.setIcon(imagen15);
-        }if(aleatorio10 == 16){
-            jToggleButton10.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimoprimer jToggleButton
-        if(aleatorio11 == 1){
-            jToggleButton11.setIcon(imagen1);
-        }if(aleatorio11 == 2){
-            jToggleButton11.setIcon(imagen2);
-        }if(aleatorio11 == 3){
-            jToggleButton11.setIcon(imagen3);
-        }if(aleatorio11 == 4){
-            jToggleButton11.setIcon(imagen4);
-        }if(aleatorio11 == 5){
-            jToggleButton11.setIcon(imagen5);
-        }if(aleatorio11 == 6){
-            jToggleButton11.setIcon(imagen6);
-        }if(aleatorio11 == 7){
-            jToggleButton11.setIcon(imagen7);
-        }if(aleatorio11 == 8){
-            jToggleButton11.setIcon(imagen8);
-        }if(aleatorio11 == 9){
-            jToggleButton11.setIcon(imagen9);
-        }if(aleatorio11 == 10){
-            jToggleButton11.setIcon(imagen10);
-        }if(aleatorio11 == 11){
-            jToggleButton11.setIcon(imagen11);
-        }if(aleatorio11 == 12){
-            jToggleButton11.setIcon(imagen12);
-        }if(aleatorio11 == 13){
-            jToggleButton11.setIcon(imagen13);
-        }if(aleatorio11 == 14){
-            jToggleButton11.setIcon(imagen14);
-        }if(aleatorio11 == 15){
-            jToggleButton11.setIcon(imagen15);
-        }if(aleatorio11 == 16){
-            jToggleButton1.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimosegundo jToggleButton
-        if(aleatorio12 == 1){
-            jToggleButton12.setIcon(imagen1);
-        }if(aleatorio12 == 2){
-            jToggleButton12.setIcon(imagen2);
-        }if(aleatorio12 == 3){
-            jToggleButton12.setIcon(imagen3);
-        }if(aleatorio12 == 4){
-            jToggleButton12.setIcon(imagen4);
-        }if(aleatorio12 == 5){
-            jToggleButton12.setIcon(imagen5);
-        }if(aleatorio12 == 6){
-            jToggleButton12.setIcon(imagen6);
-        }if(aleatorio12 == 7){
-            jToggleButton12.setIcon(imagen7);
-        }if(aleatorio12 == 8){
-            jToggleButton12.setIcon(imagen8);
-        }if(aleatorio12 == 9){
-            jToggleButton12.setIcon(imagen9);
-        }if(aleatorio12 == 10){
-            jToggleButton12.setIcon(imagen10);
-        }if(aleatorio12 == 11){
-            jToggleButton12.setIcon(imagen11);
-        }if(aleatorio12 == 12){
-            jToggleButton12.setIcon(imagen12);
-        }if(aleatorio12 == 13){
-            jToggleButton12.setIcon(imagen13);
-        }if(aleatorio12 == 14){
-            jToggleButton12.setIcon(imagen14);
-        }if(aleatorio12 == 15){
-            jToggleButton12.setIcon(imagen15);
-        }if(aleatorio12 == 16){
-            jToggleButton12.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimotercero jToggleButton
-        if(aleatorio13 == 1){
-            jToggleButton13.setIcon(imagen1);
-        }if(aleatorio13 == 2){
-            jToggleButton13.setIcon(imagen2);
-        }if(aleatorio13 == 3){
-            jToggleButton13.setIcon(imagen3);
-        }if(aleatorio13 == 4){
-            jToggleButton13.setIcon(imagen4);
-        }if(aleatorio13 == 5){
-            jToggleButton13.setIcon(imagen5);
-        }if(aleatorio13 == 6){
-            jToggleButton13.setIcon(imagen6);
-        }if(aleatorio13 == 7){
-            jToggleButton13.setIcon(imagen7);
-        }if(aleatorio13 == 8){
-            jToggleButton13.setIcon(imagen8);
-        }if(aleatorio13 == 9){
-            jToggleButton13.setIcon(imagen9);
-        }if(aleatorio13 == 10){
-            jToggleButton13.setIcon(imagen10);
-        }if(aleatorio13 == 11){
-            jToggleButton13.setIcon(imagen11);
-        }if(aleatorio13 == 12){
-            jToggleButton13.setIcon(imagen12);
-        }if(aleatorio13 == 13){
-            jToggleButton13.setIcon(imagen13);
-        }if(aleatorio13 == 14){
-            jToggleButton13.setIcon(imagen14);
-        }if(aleatorio13 == 15){
-            jToggleButton13.setIcon(imagen15);
-        }if(aleatorio13 == 16){
-            jToggleButton13.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimocuarto jToggleButton
-        if(aleatorio14 == 1){
-            jToggleButton14.setIcon(imagen1);
-        }if(aleatorio14 == 2){
-            jToggleButton14.setIcon(imagen2);
-        }if(aleatorio14 == 3){
-            jToggleButton14.setIcon(imagen3);
-        }if(aleatorio14 == 4){
-            jToggleButton14.setIcon(imagen4);
-        }if(aleatorio14 == 5){
-            jToggleButton14.setIcon(imagen5);
-        }if(aleatorio14 == 6){
-            jToggleButton14.setIcon(imagen6);
-        }if(aleatorio14 == 7){
-            jToggleButton14.setIcon(imagen7);
-        }if(aleatorio14 == 8){
-            jToggleButton14.setIcon(imagen8);
-        }if(aleatorio14 == 9){
-            jToggleButton14.setIcon(imagen9);
-        }if(aleatorio14 == 10){
-            jToggleButton14.setIcon(imagen10);
-        }if(aleatorio14 == 11){
-            jToggleButton14.setIcon(imagen11);
-        }if(aleatorio14 == 12){
-            jToggleButton14.setIcon(imagen12);
-        }if(aleatorio14 == 13){
-            jToggleButton14.setIcon(imagen13);
-        }if(aleatorio14 == 14){
-            jToggleButton14.setIcon(imagen14);
-        }if(aleatorio14 == 15){
-            jToggleButton14.setIcon(imagen15);
-        }if(aleatorio14 == 16){
-            jToggleButton1.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimoquinto jToggleButton
-        if(aleatorio15 == 1){
-            jToggleButton15.setIcon(imagen1);
-        }if(aleatorio15 == 2){
-            jToggleButton15.setIcon(imagen2);
-        }if(aleatorio15 == 3){
-            jToggleButton15.setIcon(imagen3);
-        }if(aleatorio15 == 4){
-            jToggleButton15.setIcon(imagen4);
-        }if(aleatorio15 == 5){
-            jToggleButton15.setIcon(imagen5);
-        }if(aleatorio15 == 6){
-            jToggleButton15.setIcon(imagen6);
-        }if(aleatorio15 == 7){
-            jToggleButton15.setIcon(imagen7);
-        }if(aleatorio15 == 8){
-            jToggleButton15.setIcon(imagen8);
-        }if(aleatorio15 == 9){
-            jToggleButton15.setIcon(imagen9);
-        }if(aleatorio15 == 10){
-            jToggleButton15.setIcon(imagen10);
-        }if(aleatorio15 == 11){
-            jToggleButton15.setIcon(imagen11);
-        }if(aleatorio15 == 12){
-            jToggleButton15.setIcon(imagen12);
-        }if(aleatorio15 == 13){
-            jToggleButton15.setIcon(imagen13);
-        }if(aleatorio15 == 14){
-            jToggleButton15.setIcon(imagen14);
-        }if(aleatorio15 == 15){
-            jToggleButton15.setIcon(imagen15);
-        }if(aleatorio15 == 16){
-            jToggleButton15.setIcon(imagen16);
-        }
-        
-        //Aleatorio del decimosexto jToggleButton
-        if(aleatorio16 == 1){
-            jToggleButton16.setIcon(imagen1);
-        }if(aleatorio16 == 2){
-            jToggleButton16.setIcon(imagen2);
-        }if(aleatorio16 == 3){
-            jToggleButton16.setIcon(imagen3);
-        }if(aleatorio16 == 4){
-            jToggleButton16.setIcon(imagen4);
-        }if(aleatorio16 == 5){
-            jToggleButton16.setIcon(imagen5);
-        }if(aleatorio16 == 6){
-            jToggleButton16.setIcon(imagen6);
-        }if(aleatorio16 == 7){
-            jToggleButton16.setIcon(imagen7);
-        }if(aleatorio16 == 8){
-            jToggleButton16.setIcon(imagen8);
-        }if(aleatorio16 == 9){
-            jToggleButton16.setIcon(imagen9);
-        }if(aleatorio16 == 10){
-            jToggleButton16.setIcon(imagen10);
-        }if(aleatorio16 == 11){
-            jToggleButton16.setIcon(imagen11);
-        }if(aleatorio16 == 12){
-            jToggleButton16.setIcon(imagen12);
-        }if(aleatorio16 == 13){
-            jToggleButton16.setIcon(imagen13);
-        }if(aleatorio16 == 14){
-            jToggleButton16.setIcon(imagen14);
-        }if(aleatorio16 == 15){
-            jToggleButton16.setIcon(imagen15);
-        }if(aleatorio16 == 16){
-            jToggleButton16.setIcon(imagen16);
+        Random generadorNum = new Random();
+        String numeroGenerado = "";
+        String enlace = "";
+        int contador;
+
+        for (contador = 0; contador <= 16; contador++) {
+            numeroGenerado += (char) ('A' + generadorNum.nextInt(15));
+
+            for (contador = 0; contador < numeroGenerado.length(); contador++) {
+                enlace = "/imagenes/" + numeroGenerado.charAt(contador) + ".png";
+                if (contador == 0) {
+                    try {
+                        jToggleButton1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 1) {
+                    try {
+                        jToggleButton2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 2) {
+                    try {
+                        jToggleButton3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 3) {
+                    try {
+                        jToggleButton4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 4) {
+                    try {
+                        jToggleButton5.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 5) {
+                    try {
+                        jToggleButton6.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 6) {
+                    try {
+                        jToggleButton7.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 7) {
+                    try {
+                        jToggleButton8.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 8) {
+                    try {
+                        jToggleButton9.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 9) {
+                    try {
+                        jToggleButton10.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 10) {
+                    try {
+                        jToggleButton11.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 11) {
+                    try {
+                        jToggleButton12.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 12) {
+                    try {
+                        jToggleButton13.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 13) {
+                    try {
+                        jToggleButton14.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 14) {
+                    try {
+                        jToggleButton15.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                if (contador == 15) {
+                    try {
+                        jToggleButton16.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(enlace))));
+                    } catch (IOException ex) {
+                        Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        int aciertos = 0;
+        
+        Icon iconoTB1 = jToggleButton1.getIcon();
+        Icon iconoTB2 = jToggleButton2.getIcon();
+        Icon iconoTB3 = jToggleButton3.getIcon();
+        Icon iconoTB4 = jToggleButton4.getIcon();
+        Icon iconoTB5 = jToggleButton5.getIcon();
+        Icon iconoTB6 = jToggleButton6.getIcon();
+        Icon iconoTB7 = jToggleButton7.getIcon();
+        Icon iconoTB8 = jToggleButton8.getIcon();
+        Icon iconoTB9 = jToggleButton9.getIcon();
+        Icon iconoTB10 = jToggleButton10.getIcon();
+        Icon iconoTB11 = jToggleButton11.getIcon();
+        Icon iconoTB12 = jToggleButton12.getIcon();
+        Icon iconoTB13 = jToggleButton13.getIcon();
+        Icon iconoTB14 = jToggleButton14.getIcon();
+        Icon iconoTB15 = jToggleButton15.getIcon();
+        Icon iconoTB16 = jToggleButton16.getIcon();
+        Icon iconoL1 = jLabel1.getIcon();
+        Icon iconoL2 = jLabel2.getIcon();
+        Icon iconoL3 = jLabel3.getIcon();
+        Icon iconoL4 = jLabel4.getIcon();
+        Icon iconoL5 = jLabel5.getIcon();
+        Icon iconoL6 = jLabel6.getIcon();
+        Icon iconoL7 = jLabel7.getIcon();
+        
+
+        if(iconoTB1 == iconoL1 || iconoTB1 == iconoL2 || iconoTB1 == iconoL3 || iconoTB1 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton1.setEnabled(false);
+        }
+        if(iconoTB2 == iconoL1 || iconoTB2 == iconoL2 || iconoTB2 == iconoL3 || iconoTB2 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton2.setEnabled(false);
+        }
+        if(iconoTB3 == iconoL1 || iconoTB3 == iconoL2 || iconoTB3 == iconoL3 || iconoTB3 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton3.setEnabled(false);
+        }
+        if(iconoTB4 == iconoL1 || iconoTB4 == iconoL2 || iconoTB4 == iconoL3 || iconoTB4 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton4.setEnabled(false);
+        }
+        if(iconoTB5 == iconoL1 || iconoTB5 == iconoL2 || iconoTB5 == iconoL3 || iconoTB5 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton5.setEnabled(false);
+        }
+        if(iconoTB6 == iconoL1 || iconoTB6 == iconoL2 || iconoTB6 == iconoL3 || iconoTB6 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton6.setEnabled(false);
+        }
+        if(iconoTB7 == iconoL1 || iconoTB7 == iconoL2 || iconoTB7 == iconoL3 || iconoTB7 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton7.setEnabled(false);
+        }
+        if(iconoTB8 == iconoL1 || iconoTB8 == iconoL2 || iconoTB8 == iconoL3 || iconoTB8 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton8.setEnabled(false);
+        }
+        if(iconoTB9 == iconoL1 || iconoTB9 == iconoL2 || iconoTB9 == iconoL3 || iconoTB9 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton9.setEnabled(false);
+        }
+        if(iconoTB10 == iconoL1 || iconoTB10 == iconoL2 || iconoTB10 == iconoL3 || iconoTB10 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton10.setEnabled(false);
+        }
+        if(iconoTB11 == iconoL1 || iconoTB11 == iconoL2 || iconoTB11 == iconoL3 || iconoTB11 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton11.setEnabled(false);
+        }
+        if(iconoTB12 == iconoL1 || iconoTB12 == iconoL2 || iconoTB12 == iconoL3 || iconoTB12 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton12.setEnabled(false);
+        }
+        if(iconoTB13 == iconoL1 || iconoTB13 == iconoL2 || iconoTB13 == iconoL3 || iconoTB13 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton13.setEnabled(false);
+        }
+        if(iconoTB14 == iconoL1 || iconoTB14 == iconoL2 || iconoTB14 == iconoL3 || iconoTB14 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton14.setEnabled(false);
+        }
+        if(iconoTB15 == iconoL1 || iconoTB15 == iconoL2 || iconoTB15 == iconoL3 || iconoTB15 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton15.setEnabled(false);
+        }
+        if(iconoTB16 == iconoL1 || iconoTB16 == iconoL2 || iconoTB16 == iconoL3 || iconoTB16 == iconoL4 || iconoTB1 == iconoL5 || iconoTB1 == iconoL6 || iconoTB1 == iconoL7){
+            aciertos++;
+        }else{
+            jToggleButton16.setEnabled(false);
+        }
+        
+        
+        
+        System.out.println(aciertos);
+        
+        jLabel9.setText(String.valueOf(aciertos));
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -1175,10 +695,16 @@ public class Practica3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
